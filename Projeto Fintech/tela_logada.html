@@ -18,48 +18,18 @@
     <body>
         <header>
             <!-- Menu -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+            <nav class="bg-white">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-dark" href="#">
-                        <img src="./Assests/imagens/1- Cash Flow - Logo.png" width="170" height="170" class="img-fluid" alt="Logo">
-                    </a>
-                    <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="#">Sobre</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Ferramentas
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Fluxo de Caixa</a></li>
-                                    <li><a class="dropdown-item" href="#">Investimentos</a></li>
-                                    <li><a class="dropdown-item" href="#">Criptomoedas e NFTs</a></li>
-                                    <li><a class="dropdown-item" href="#">Planejamento</a></li>
-                                    <li><a class="dropdown-item" href="#">Dicas</a></li>
-                                    <li><a class="dropdown-item" href="#">Nóticias</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Mais Informações</a></li>
-                                </ul>
-                                <div class="text-end">
-                                    <button type="button" class="btn btn-outline-dark me-2">Login</button>
-                                    <button type="button" class=" botao1 btn">Inscreva-se</button>
-                                  </div>
-                            </li>
-                        </ul>                  
+                    
+                    <div class="col-md-2 my-0">
+                    <img src="./Assests/imagens/1- Cash Flow - Logo.png" width="60" height="60" class="img-fluid mt-1 mb-1" alt="Logo">
                     </div>
+
+                    <div class="col md-3">
+
+
+                    </div>
+
                 </div>
             </nav>
         </header>
@@ -70,12 +40,20 @@
                     <div class="col-md-4 my-0">
                         <img src="./Assests/imagens/2- Cash Flow - Logo 2.svg"  class=" imagem2 img-fluid" alt="">
                     </div>
+
                     <div class="col-md-4 my-0 p-0">
-                        <h1 class="hola mt-2 p-4 fw-ligther">Trasforme sua vida financeira e assuma o controle de suas finanças de uma maneira fácil</h1>
-                        <form class="d-flex mt-5 p-0    ">
-                        <input class="form-control me-2 type="search" placeholder="Insira seu e-mail" aria-label="Search">
-                        <button class="btn btn-dark w-50" type="submit">Cadastre-se</button>
+                        <h2 class="hola mt-2 p-1 fw-ligther">Movimentação</h2>
+                        <form class="d-flex mt-5 p-0 ">
+                        <input class="form-control me-2 text-black-50" placeholder="Insira o valor" aria-label="Search">
+                        <label for="country" class="form-label"></label>
+
+                        <select class="form-select text-black-50" id="" required="">
+                            <option>Receita</option>
+                            <option>Despesa</option>
+                            <option>Investimento</option>
+                        </select>
                         </form>
+                        <button class="mt-5 btn btn-dark w-50" type="submit">Cadastrar Movimentação</button>
                     </div>
                     <div class="picture1 col-md-4" >
                         <img src="./Assests/imagens/3- Mobile payments.svg" class="img-fluid"  alt="Foto ilustrativa">
@@ -87,45 +65,18 @@
             <div>
                 <div class="container-fluid">
                     <div class="row mt-3">
-                        <div class="col-lg-4 mt-3">
+                        <div class="col-lg-4 mt-3 text-center">
                             <img src="./Assests/imagens/4- wallet.svg" class="bd-placeholder-img rounded-circle"  width="140" height="140" alt="">
-                            <h2>Fluxo de Caixa</h2>
-                            <p>Controle de suas despesas e receitas</p>
-                            <p><a class="btn btn-dark" href="#">Saiba mais</a></p>
+                            <p><a class="btn btn-dark mt-3" href="#">Saldo</a></p>
                         </div>
-                        <div class="col-lg-4 mt-3">
+                        <div class="col-lg-4 mt-3 text-center">
                             <img src="./Assests/imagens/5- Investimentos.svg" class="bd-placeholder-img rounded-circle"  width="140" height="140" alt="">
-                            <h2>Investimentos</h2>
-                            <p>Gerencie seus investimentos</p>
-                            <p><a class="btn btn-dark" href="#">Saiba mais</a></p>
+                            <p><a class="btn btn-dark mt-3" href="#">Despesa</a></p>
                         </div>
-                        <div class="col-lg-4 mt-3">
-                            <img src="./Assests/imagens/6 - crypto_flowers.svg" class="bd-placeholder-img rounded-circle"  width="140" height="140" alt="">
-                            <h2>Criptomoedas e NFTs</h2>
-                            <p>Invista e fique por dentro do mercado</p>
-                            <p><a class="btn btn-dark" href="#">Saiba Mais</a></p>
+                        <div class="col-lg-4 mt-3 text-center">
+                            <img src="./Assests/imagens/Imagens/Bitcoin P2P-pana.svg" class="bd-placeholder-img rounded-circle"  width="140" height="140" alt="">
+                            <p><a class="btn btn-dark mt-3" href="#">Receita</a></p>
                         </div>
-                        <div class="col-lg-4 mt-3">
-                            <img src="./Assests/imagens/7- Financial data-bro.svg" class="bd-placeholder-img rounded-circle"  width="140" height="140" alt="">
-                            <h2>Planejamento Financeiro</h2>
-                            <p>Planeja sua vida financeira</p>
-                            <p><a class="btn btn-dark" href="#">Saiba mais</a></p>
-                        </div>
-                        <div class="col-lg-4 mt-3">
-                            <img src="./Assests/imagens/8 - Financial data-rafiki.svg" class="bd-placeholder-img rounded-circle"  width="140" height="140" alt="">
-                            <h2>Dicas Financeiras</h2>
-                            <p>Aprenda com especialistas</p>
-                            <p><a class="btn btn-dark" href="#">Saiba mais</a></p>
-                        </div>
-                        <div class="col-lg-4 mt-3">
-                            <img src="./Assests/imagens/9 - News.svg" class="bd-placeholder-img rounded-circle"  width="140" height="140" alt="">
-                            <h2>Nóticias</h2>
-                            <p>Fique por dentro das principais nóticias do mercado</p>
-                            <p><a class="btn btn-dark" href="#">Saiba mais</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- Rodapé -->
             <footer class="final container-fluid  mt-5 p-3">
                 <div>
