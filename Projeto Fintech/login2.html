@@ -16,16 +16,7 @@
         <link rel="shortcut icon" href="/Assests/imagens/0- Cash Flow - Icone.svg" type="image/x-icon">
         <title>Login CF</title>
 
-        <script type="text/javascript">
-            function loginMenuClick(){
-                document.getElementById("menuLogin").style.display = "";
-                document.getElementById("menuCadastro").style.display = "none";
-            }
-            function cadastroMenuClick(){
-                document.getElementById("menuLogin").style.display = "none";
-                document.getElementById("menuCadastro").style.display = "";
-            }
-        </script>
+
     </head>
 
     <body class="text-center">
@@ -43,16 +34,16 @@
                         <div class="m-2 p-4">
                             <img class="mb-4" src="./Assests/imagens/1- Cash Flow - Logo 1.svg" alt="" width="72" height="57">
                             <form>
-                                <button class="btn btn-lg btn-warning btn-outline-dark m-3" type="button" onClick="loginMenuClick()">Entrar</button>
-                                <button class="btn btn-lg m-3" type="button" onClick="cadastroMenuClick()">Cadastrar</button>
+                                <button class="btn btn-lg btn-warning btn-outline-dark m-3" type="button" onclick="loginMenuClick()">Entrar</button>
+                                <button class="btn btn-lg btn-warning btn-outline-dark m-3" type="button" onclick="cadastroMenuClick()">Cadastrar</button>
                                
                                 <div id="menuLogin">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                        <input type="email" class="form-control" id="emailLogin" placeholder="">
                                         <label for="floatingInput">Seu e-mail</label>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="password" class="form-control" id="floatingPassword"   placeholder="Password">
+                                        <input type="password" class="form-control" id="senhaLogin"   placeholder="">
                                         <label for="floatingPassword">Senha</label>
                                     </div>
                                     <div class="checkbox m-3">
@@ -65,35 +56,35 @@
 
                                 <div id="menuCadastro" style="display: none">
                                     <div class="form-floating">
-                                        <input type="name" class="form-control mt-3 mb-4" id="floatingInput" placeholder="name">
-                                        <label for="floatingInput">Nome</label>
+                                        <input type="name" class="form-control mt-3 mb-4" id="nomeCadastro" placeholder="">
+                                        <label for="floatingInput">Nome</label> 
                                     </div>
                                     <div class="form-floating">
-                                        <input type="email" class="form-control mb-4" id="floatingInput" placeholder="name@example.com">
+                                        <input oninput="mascara(this)" type="text" class="form-control mb-4" id="cpfCadastro" placeholder="" onclick="mascara(i)"> 
                                         <label for="floatingInput">CPF</label>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="password" class="form-control mb-4" id="floatingPassword"   placeholder="Password">
+                                        <input type="email" class="form-control mb-4" id="emailCadastro"   placeholder="">
                                         <label for="floatingPassword">E-mail</label>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="password" class="form-control mb-4" id="floatingPassword"   placeholder="Password">
+                                        <input oninput="mascaracel(this)" type="tel" class="form-control mb-4" id="ddiCadastro"   placeholder="" onclick="mascaracel(i)">
                                         <label for="floatingPassword">DDI</label>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="password" class="form-control mb-4" id="floatingPassword"   placeholder="Password">
+                                        <input oninput="mascaracel(this)" type="tel" class="form-control mb-4" id="dddCadastro"   placeholder="" onclick="mascaracel(i)">
                                         <label for="floatingPassword">DDD</label>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="password" class="form-control mb-4" id="floatingPassword"   placeholder="Password">
+                                        <input oninput="celmask(this)" type="tel" class="form-control mb-4" id="celularCadastro"   placeholder="" onclick="celmask(i)">
                                         <label for="floatingPassword">Celular</label>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="password" class="form-control mb-4" id="floatingPassword"   placeholder="Password">
+                                        <input type="password" class="form-control mb-4" id="senhaCadastro"   placeholder="">
                                         <label for="floatingPassword">Senha</label>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="password" class="form-control mb-4" id="floatingPassword"   placeholder="Password">
+                                        <input type="password" class="form-control mb-4" id="confirmSenha"   placeholder="">
                                         <label for="floatingPassword">Confirmar Senha</label>
                                     </div>
                                     <div class="checkbox m-3">
@@ -102,7 +93,6 @@
                                         </label>
                                     </div>
                                     <button class="w-100 btn btn-lg btn-dark" type="submit">Cadastrar</button>
-
                                 </div>
                                 <p class="mt-5 mb-3 text-muted">© 2022</p>
                             </form>
@@ -117,6 +107,9 @@
                 </div>
             </div>
         </main>
+
+         <!-- Javascript -->
+        <script src="/Projeto Fintech/Assests/Javascript/app.js"></script>
     </body>
 
 </html>
