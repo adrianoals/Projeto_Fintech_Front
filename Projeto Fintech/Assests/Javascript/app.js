@@ -13,7 +13,6 @@ function cadastroMenuClick(){
 }
 
 
-
 // Função para CPF 
 function mascara(i){
    
@@ -60,3 +59,5 @@ function celmask(i){
  }
 
 
+ 
+ document.getElementById("user_name").innerHTML = 'Adriano';
